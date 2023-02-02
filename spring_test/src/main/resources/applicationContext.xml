@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <bean id="courseService" class="com.msb.service.impl.CourseServiceImpl">
+        <property name="courseDao" ref="courseDao"></property>
+    </bean>
+    <bean id="courseDao" class="com.msb.dao.impl.CourseDaoImpl">
+        <property name="subject" value="history"></property>
+    </bean>
+</beans>
